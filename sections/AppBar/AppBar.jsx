@@ -1,7 +1,24 @@
 import style from "./AppBar.module.css";
 import Image from "next/image";
 
-const AppBar = () => {
+export const desc = {
+  ru: (
+    <>
+      Документальный фильм
+      <br />
+      Константина Иванова и Никиты Кабардина
+    </>
+  ),
+  en: (
+    <>
+      Documentary movie by
+      <br />
+      Konstantin Ivanov and Nikita Kabardin
+    </>
+  )
+};
+
+const AppBar = ({ lang = "en" }) => {
   return (
     <header className={style.container}>
       <div className={style.wrapper}>
@@ -13,11 +30,7 @@ const AppBar = () => {
             height="44px"
           />
         </div>
-        <div className={style.title}>
-          Documentary movie by
-          <br />
-          Konstantin Ivanov and Nikita Kabardin
-        </div>
+        <div className={style.title}>{desc[lang]}</div>
         <div className={style.social}>
           <a href="https://www.instagram.com/papa_srapa/" rel="noopener">
             <Image

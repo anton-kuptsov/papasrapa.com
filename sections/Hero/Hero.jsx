@@ -13,7 +13,7 @@ const Hero = () => {
           title="PapaSrapa documentary movie teaser"
         />
         <div className={style.muteButton} id="unmute">
-          <div>Включить звук</div>
+          <div>Unmute</div>
         </div>
         <Script src="https://player.vimeo.com/api/player.js" />
         <script
