@@ -1,0 +1,66 @@
+/* @font-face {
+  font-family: "Akrobat";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/akrobat/Akrobat-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Akrobat";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/akrobat/Akrobat-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Akrobat";
+  font-display: auto;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/akrobat/Akrobat-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Akrobat";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/akrobat/Akrobat-ExtraBold.woff2") format("woff2");
+} */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --footer_bg: #231f20;
+  --max-width: 1200px;
+  --font-pt-serif: "PT Sans", sans-serif;
+  /* --font-akrobat: "Akrobat"; */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/assets/back_02_small.jpg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.external-link {
+  color: #ffaf36;
+  text-decoration: none;
+}
