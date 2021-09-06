@@ -1,4 +1,5 @@
 import style from "./Hero.module.css";
+import Script from "next/script";
 
 const Hero = () => {
   return (
@@ -9,12 +10,12 @@ const Hero = () => {
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           id="video"
-          title={data.ru.description}
+          title="PapaSrapa documentary movie teaser"
         />
         <div className={style.muteButton} id="unmute">
           <div>Включить звук</div>
         </div>
-        <script src="https://player.vimeo.com/api/player.js" />
+        <Script src="https://player.vimeo.com/api/player.js" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
