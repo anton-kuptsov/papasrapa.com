@@ -1,7 +1,6 @@
 import style from "./Hero.module.css";
-import Script from "next/script";
 
-const Hero = () => {
+export const Hero = ({ lang = "en" }) => {
   return (
     <section className={style.container}>
       <div className={style.video_wrapper}>
@@ -13,9 +12,10 @@ const Hero = () => {
           title="PapaSrapa documentary movie teaser"
         />
         <div className={style.muteButton} id="unmute">
-          <div>Unmute</div>
+          <div>{lang === "en" ? "Unmute" : "Включить звук"}</div>
         </div>
-        <Script src="https://player.vimeo.com/api/player.js" />
+        {/*eslint-disable */}
+        <script src="https://player.vimeo.com/api/player.js" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -32,5 +32,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;
