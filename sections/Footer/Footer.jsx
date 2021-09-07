@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "./Footer.module.css";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className={style.container}>
       <Image
@@ -13,5 +13,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

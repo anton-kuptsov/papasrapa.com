@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Akrobat";
   font-display: auto;
   font-style: normal;
@@ -25,7 +25,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("/fonts/akrobat/Akrobat-ExtraBold.woff2") format("woff2");
-} */
+}
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 :root {
@@ -34,7 +34,7 @@
   --footer_bg: #231f20;
   --max-width: 1200px;
   --font-pt-serif: "PT Sans", sans-serif;
-  /* --font-akrobat: "Akrobat"; */
+  --font-akrobat: "Akrobat";
 }
 
 html,

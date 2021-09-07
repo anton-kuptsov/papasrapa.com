@@ -7,7 +7,7 @@ const description =
   "Documentary movie by Konstantin Ivanov and Nikita Kabardin";
 const link = "https://papasrapa.com";
 
-const Head = () => {
+export const Head = () => {
   return (
     <HeadTag>
       <title>{title}</title>
@@ -40,5 +40,3 @@ const Head = () => {
     </HeadTag>
   );
 };
-
-export default Head;

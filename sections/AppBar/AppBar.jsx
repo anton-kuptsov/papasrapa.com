@@ -1,7 +1,7 @@
 import style from "./AppBar.module.css";
 import Image from "next/image";
 
-export const desc = {
+const desc = {
   ru: (
     <>
       Документальный фильм
@@ -18,7 +18,8 @@ export const desc = {
   )
 };
 
-const AppBar = ({ lang = "en" }) => {
+export const AppBar = ({ lang = "en" }) => {
+  const lang_link = lang === "en" ? "/ru" : "/";
   return (
     <header className={style.container}>
       <div className={style.wrapper}>
@@ -32,7 +33,11 @@ const AppBar = ({ lang = "en" }) => {
         </div>
         <div className={style.title}>{desc[lang]}</div>
         <div className={style.social}>
-          <a href="https://www.instagram.com/papa_srapa/" rel="noopener">
+          <a
+            href="https://www.instagram.com/papa_srapa/"
+            rel="noopener"
+            title="Instagram"
+          >
             <Image
               src="/assets/instagram-white.svg"
               alt="Instagram"
@@ -40,7 +45,7 @@ const AppBar = ({ lang = "en" }) => {
               height={32}
             />
           </a>
-          <a href="https://t.me/papasrapa" rel="noopener">
+          <a href="https://t.me/papasrapa" rel="noopener" title="Telegram">
             <Image
               src="/assets/telegram-white.svg"
               alt="Telegram"
@@ -48,10 +53,16 @@ const AppBar = ({ lang = "en" }) => {
               height={32}
             />
           </a>
+          <a
+            href={lang_link}
+            rel="noopener"
+            title={lang === "en" ? "Russian" : "English"}
+            className={style.lang_link}
+          >
+            {lang === "en" ? "ru" : "en"}
+          </a>
         </div>
       </div>
     </header>
   );
 };
-
-export default AppBar;
