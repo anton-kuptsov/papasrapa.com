@@ -38,19 +38,19 @@ export const Poster = () => {
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
-        <div className={style.title}>A Story</div>
         <div className={style.content}>
           <div className={style.poster}>
             <Image
               src="/assets/new_poster.png"
-              width={350}
-              height={495}
+              width={450}
+              height={634}
               alt={images[0].caption}
               onClick={() => openLightbox(0)}
               unoptimized
             />
           </div>
           <div className={style.text}>
+            <div className={style.title}>A Story</div>
             <p>
               <strong>PAPA SRAPA</strong> is not a typical music documentary,
               but rather a condensed trip to the very heart of Noise. It is

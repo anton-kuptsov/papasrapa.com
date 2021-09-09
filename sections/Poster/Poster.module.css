@@ -30,7 +30,7 @@
 }
 
 .poster {
-  min-width: 350px;
+  min-width: 450px;
 }
 .poster:hover {
   cursor: pointer;
