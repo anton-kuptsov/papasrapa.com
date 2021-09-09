@@ -9,6 +9,7 @@ import { Credits } from "../sections/Credits";
 import { Poster } from "../sections/Poster";
 import { Footer } from "../sections/Footer";
 import { Teaser } from "../sections/Teaser";
+import { Team } from "../sections/Team";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <Poster />
         <Teaser />
+        <Team />
         <Gallery />
         <Credits />
       </main>
