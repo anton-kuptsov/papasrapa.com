@@ -99,6 +99,9 @@ export const Poster = () => {
           </div>
         </div>
         <div className={style.next_text}>
+          <strong>
+            <i>dive into the underground . . . </i>
+          </strong>
           <p>
             Our camera followed Papa Srapa at every step and turn. We sneaked
             into numerous dim rooms and spacious halls he was performing at,
