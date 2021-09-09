@@ -8,6 +8,7 @@ import { Gallery } from "../sections/Gallery";
 import { Credits } from "../sections/Credits";
 import { Poster } from "../sections/Poster";
 import { Footer } from "../sections/Footer";
+import { Teaser } from "../sections/Teaser";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Poster />
+        <Teaser />
         <Gallery />
         <Credits />
       </main>
