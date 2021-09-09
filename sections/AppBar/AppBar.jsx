@@ -11,7 +11,7 @@ const desc = {
   ),
   en: (
     <>
-      Documentary movie by
+      Music documentary by
       <br />
       Konstantin Ivanov and Nikita Kabardin
     </>

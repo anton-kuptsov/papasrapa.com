@@ -12,8 +12,8 @@ import { Perfomance } from "../sections/ru/Perfomance";
 import { Shaman } from "../sections/ru/Shaman";
 import { Movie } from "../sections/ru/Movie";
 import { Team } from "../sections/ru/Team";
-import { Credits } from "../sections/ru/Credits";
-import { Poster } from "../sections/ru/Poster";
+import { Credits } from "../sections/Credits";
+import { Poster } from "../sections/Poster";
 import { Gallery } from "../sections/ru/Gallery";
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
         <Team />
         <Gallery />
         <Credits />
-        <Poster />
+        <Poster lang="ru" />
       </main>
       <Footer />
     </div>

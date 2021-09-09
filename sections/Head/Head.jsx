@@ -2,10 +2,10 @@ import HeadTag from "next/head";
 
 const fb_app_id = "257953674358265";
 const title =
-  "Шум. Синтез. Шаманизм. Документальный фильм о главном нойз-музыканте России";
+  "Noise. Shamanism. Synthesis. Documentary about main undeground noise-musician of Russia.";
 const description =
-  "Documentary movie by Konstantin Ivanov and Nikita Kabardin";
-const link = "https://papasrapa.com";
+  "Music documentary by Konstantin Ivanov and Nikita Kabardin";
+const link = "https://www.papasrapa.com";
 
 export const Head = () => {
   return (
