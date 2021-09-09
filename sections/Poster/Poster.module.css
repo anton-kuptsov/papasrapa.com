@@ -107,6 +107,9 @@
   .text {
     margin-left: 0;
   }
+  .poster {
+    min-width: 100vw;
+  }
 
   .wrapper_next {
     flex-direction: column;
