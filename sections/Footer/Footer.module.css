@@ -4,5 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--footer_bg);
+  background: var(--black);
+  padding-bottom: 1rem;
 }

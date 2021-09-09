@@ -4,21 +4,25 @@ import styles from "../styles/Home.module.css";
 
 import { AppBar } from "../sections/AppBar";
 import { Hero } from "../sections/Hero";
-import { Gallery } from "../sections/ru/Gallery";
+import { Gallery } from "../sections/Gallery";
 import { Credits } from "../sections/Credits";
 import { Poster } from "../sections/Poster";
-import { Footer } from "../sections/ru/Footer";
+import { Footer } from "../sections/Footer";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head />
       <AppBar />
+      <div
+        className="background"
+        style={{ "--background-img": "url(/assets/back_02.webp)" }}
+      />
       <main className={styles.main}>
         <Hero />
+        <Poster />
         <Gallery />
         <Credits />
-        <Poster />
       </main>
 
       <Footer />

@@ -1,7 +1,7 @@
 import styles from "../sections/ru/Home.module.css";
 import { Head } from "../sections/ru/Head";
 import { AppBar } from "../sections/AppBar";
-import { Footer } from "../sections/ru/Footer";
+import { Footer } from "../sections/Footer";
 import { Hero } from "../sections/ru/Hero";
 import { AboutMovie } from "../sections/ru/AboutMovie";
 import { Teaser } from "../sections/ru/Teaser";
@@ -14,7 +14,7 @@ import { Movie } from "../sections/ru/Movie";
 import { Team } from "../sections/ru/Team";
 import { Credits } from "../sections/Credits";
 import { Poster } from "../sections/Poster";
-import { Gallery } from "../sections/ru/Gallery";
+import { Gallery } from "../sections/Gallery";
 
 export default function Home() {
   return (

@@ -2,9 +2,9 @@ import HeadTag from "next/head";
 
 const fb_app_id = "257953674358265";
 const title =
-  "Noise. Shamanism. Synthesis. Documentary about main undeground noise-musician of Russia.";
+  "Papa Srapa. Music documentary by Konstantin Ivanov & Nikita Kabardin.";
 const description =
-  "Music documentary by Konstantin Ivanov and Nikita Kabardin";
+  "PAPA SRAPA is not a typical music documentary, but rather a condensed trip to the very heart of Noise. It is loaded with music that can hurt and heal, Russian weird avant-garde and savage vigor of its preeminent performer.";
 const link = "https://www.papasrapa.com";
 
 export const Head = () => {

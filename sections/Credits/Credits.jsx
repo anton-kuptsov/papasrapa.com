@@ -145,6 +145,17 @@ export const Credits = () => {
       </div>
 
       <div className={style.group}>
+        <div className={style.sub_title}>Poster Artist</div>
+        <p>Alex Ricochet</p>
+      </div>
+
+      <div className={style.group}>
+        <div className={style.sub_title}>Design</div>
+        <p>Oleg Pospelov</p>
+        <p>Anastasia Mew</p>
+      </div>
+
+      <div className={style.group}>
         <div className={style.sub_title}>Special Thanks</div>
         <p>Gallery GEZ-21</p>
         <p>Evgeniy BioSonar</p>
