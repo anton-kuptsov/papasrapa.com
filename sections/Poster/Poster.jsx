@@ -3,30 +3,30 @@ import { useCallback, useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import style from "./Poster.module.css";
 
-export const Poster = () => {
-  const images = [
-    {
-      src: "/assets/new_poster.jpg",
-      caption: "PapaSrapa movie poster"
-    },
-    {
-      src: "/photos/handmade_1.jpg",
-      caption: "Handmade transistor by PapaSrapa"
-    },
-    {
-      src: "/photos/handmade_2.jpg",
-      caption: "Handmade transistor by PapaSrapa"
-    },
-    {
-      src: "/photos/papa_young.jpg",
-      caption: "Eduard Srapionov aka PapaSrapa"
-    }
-  ];
+export const STORY_IMAGES = [
+  {
+    src: "/assets/new_poster.jpg",
+    caption: "PapaSrapa movie poster",
+  },
+  {
+    src: "/photos/handmade_1.jpg",
+    caption: "Handmade transistor by PapaSrapa",
+  },
+  {
+    src: "/photos/handmade_2.jpg",
+    caption: "Handmade transistor by PapaSrapa",
+  },
+  {
+    src: "/photos/papa_young.jpg",
+    caption: "Eduard Srapionov aka PapaSrapa",
+  },
+];
 
+export const Poster = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback(index => {
+  const openLightbox = useCallback((index) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
@@ -44,7 +44,7 @@ export const Poster = () => {
               src="/assets/new_poster.png"
               width={450}
               height={634}
-              alt={images[0].caption}
+              alt={STORY_IMAGES[0].caption}
               onClick={() => openLightbox(0)}
               unoptimized
             />
@@ -75,65 +75,14 @@ export const Poster = () => {
           </div>
         </div>
       </div>
-      <div className={style.wrapper_next}>
-        <div className={style.foto_handmaid}>
-          <div className={style.handmaid_top}>
-            <Image
-              src={images[1].src}
-              width={240}
-              height={240}
-              objectFit="cover"
-              alt={images[1].caption}
-              onClick={() => openLightbox(1)}
-            />
-          </div>
-          <div className={style.handmaid_bottom}>
-            <Image
-              src={images[2].src}
-              width={240}
-              height={240}
-              objectFit="cover"
-              alt={images[2].caption}
-              onClick={() => openLightbox(2)}
-            />
-          </div>
-        </div>
-        <div className={style.next_text}>
-          <strong>
-            <i>dive into the underground . . . </i>
-          </strong>
-          <p>
-            Our camera followed Papa Srapa at every step and turn. We sneaked
-            into numerous dim rooms and spacious halls he was performing at,
-            chased him to the eerie underworld of an abandoned factory. We
-            listened to his liquored up revelations on the Soviet underground -
-            and tasted of his doomsday DIY synth shrieking.
-          </p>
-          <p>
-            This film shows that Noise music was not born in Europe or Japan,
-            but came to be as a bright child of a century-old tradition of
-            Russian avant-garde.
-          </p>
-        </div>
-        <div className={style.foto_papa}>
-          <Image
-            src={images[3].src}
-            width={400}
-            height={500}
-            objectFit="cover"
-            alt={images[3].caption}
-            onClick={() => openLightbox(3)}
-          />
-        </div>
-      </div>
       <ModalGateway>
         {viewerIsOpen && (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={images.map(item => ({
+              views={STORY_IMAGES.map((item) => ({
                 ...item,
-                source: item.src
+                source: item.src,
               }))}
             />
           </Modal>

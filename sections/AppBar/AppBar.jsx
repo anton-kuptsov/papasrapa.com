@@ -15,7 +15,7 @@ const desc = {
       <br />
       Konstantin Ivanov and Nikita Kabardin
     </>
-  )
+  ),
 };
 
 export const AppBar = ({ lang = "en" }) => {

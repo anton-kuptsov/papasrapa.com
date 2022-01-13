@@ -26,7 +26,7 @@ export const Hero = () => {
                             player.setMuted(false);
                             btn.style.display='none';
                             }
-                            );`
+                            );`,
           }}
         />
       </div>
