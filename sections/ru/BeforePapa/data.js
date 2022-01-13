@@ -1,7 +1,7 @@
 import {
   Decoration,
   INIT_LETTER_BEFORE_BOTTOM,
-  INIT_LETTER_BEFORE_TOP
+  INIT_LETTER_BEFORE_TOP,
 } from "../components/Decoration";
 
 export const data = {
@@ -27,5 +27,5 @@ export const data = {
       миру современного представителя столетней традиции, посвятившего свою
       жизнь шуму, перфомансу и синтезу.
     </>
-  )
+  ),
 };

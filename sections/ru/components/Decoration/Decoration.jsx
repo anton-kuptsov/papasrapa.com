@@ -1,6 +1,6 @@
 import { bp } from "../../../../app.config";
 
-export const Decoration = props => {
+export const Decoration = (props) => {
   const {
     w,
     h,
@@ -17,7 +17,7 @@ export const Decoration = props => {
     sm,
     md,
     lg,
-    children
+    children,
   } = props;
 
   return (

@@ -14,7 +14,7 @@ export const Gallery = () => {
     setIsLoaded(true);
   }, []);
 
-  const openLightbox = useCallback(index => {
+  const openLightbox = useCallback((index) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
@@ -163,9 +163,9 @@ export const Gallery = () => {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={images.map(item => ({
+              views={images.map((item) => ({
                 ...item,
-                source: item.src
+                source: item.src,
               }))}
             />
           </Modal>

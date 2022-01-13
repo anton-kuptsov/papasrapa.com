@@ -8,7 +8,7 @@ import {
   SQUARE_BIG,
   SQUARE_MEDIUM,
   TEXT10,
-  TEXT20
+  TEXT20,
 } from "../components/Decoration";
 
 export const AboutCharacter = () => {

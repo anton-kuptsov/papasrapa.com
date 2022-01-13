@@ -1,7 +1,7 @@
 import {
   Decoration,
   INIT_LETTER_315,
-  INIT_LETTER_135
+  INIT_LETTER_135,
 } from "../components/Decoration";
 
 const text =
@@ -28,5 +28,5 @@ export const data = {
       инструменты — непривычны не только на слух, но и на ощупь, дико ревущие и
       превращающие любой концерт Папы Срапы в запредельное шоу саунд-арта.
     </>
-  )
+  ),
 };
